@@ -2,6 +2,7 @@ import React from "react";
 import NoteInput from "./NoteInput";
 import NoteList from "./NoteList";
 import NoteHeader from "./NoteHeader";
+import NoteFooter from "./NoteFooter";
 import { getInitialData } from "../utils";
 
 class NoteBody extends React.Component {
@@ -84,7 +85,7 @@ class NoteBody extends React.Component {
         <div className="note-app__body">
           <NoteInput addNote={this.onAddNoteHandler} />
 
-          <h2>Active Notes</h2>
+          <h2>📤 Active Notes</h2>
           {filteredNotes.length > 0 ? (
             <NoteList
               notes={filteredNotes}
@@ -96,7 +97,7 @@ class NoteBody extends React.Component {
             <p className="notes-list__empty-message">No records</p>
           )}
 
-          <h2>Archive</h2>
+          <h2>📩 Archive</h2>
           {filteredArchivedNotes.length > 0 ? (
             <NoteList
               notes={filteredArchivedNotes}
@@ -108,6 +109,7 @@ class NoteBody extends React.Component {
             <p className="notes-list__empty-message">No records</p>
           )}
         </div>
+        <NoteFooter />
       </>
     );
   }

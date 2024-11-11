@@ -19,6 +19,7 @@ class SearchButton extends React.Component {
     render() {
         return (
             <div className="note-search">
+                <label>🔎</label> &nbsp;
                 <input type="text" placeholder="Search note ..." 
                     value={this.state.title} onChange={this.onSearchChangeHandler}/>
             </div>

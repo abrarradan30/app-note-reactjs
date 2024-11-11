@@ -43,7 +43,7 @@ class NoteInput extends React.Component {
         
         return (
             <div className="note-input">
-                <h2>Make a Note</h2>
+                <h2>➕ New Note</h2>
                 <form onSubmit={this.onSubmitEventHandler}>
                     <p className="note-input__title__char-limit">Remaining text: {remainingChars}</p>
                     <input className="note-input__title" type="text" placeholder="Enter title ..." 

@@ -39,7 +39,6 @@ input::placeholder, textarea::placeholder {
   color: white;
 }
 
-
 .note-app__body {
   max-width: 1000px;
   margin: 16px auto;
@@ -163,6 +162,29 @@ input::placeholder, textarea::placeholder {
 
 .note-item__delete-button:hover {
   color: #b00020;
+}
+
+.note-app__footer { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 16px;
+  border-top: 1px solid #aaa;
+  flex-direction: column;
+}
+
+.note-app__footer h1 {
+  margin: 8px 0;
+  color: white;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.footer-divider {
+  width: 100%;
+  border: 0;
+  /* border-top: 1px solid white; */
+  margin-bottom: 8px;
 }
 
 @media only screen and (min-width: 500px) {
