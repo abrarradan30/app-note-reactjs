@@ -27,11 +27,11 @@ class NoteBody extends React.Component {
         notes: [
           ...prevState.notes,
           {
-            id: +new Date(),
-            title,
-            body,
-            createdAt: +new Date(),
+            id: new Date().getTime().toString(), 
+            title: String(title), 
+            body: String(body), 
             archived: false,
+            createdAt: new Date().toISOString(),
           },
         ],
       };
